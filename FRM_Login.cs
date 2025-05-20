@@ -29,8 +29,17 @@ namespace StudentMIS
             if(loggedin)
             {
                 MessageBox.Show("Welcome User");
-                FRM_Dashboard dashboard = new FRM_Dashboard();
-                dashboard.Show();
+                if(role == "administrator")
+                {
+                    FRM_Dashboard dashboard = new FRM_Dashboard();
+                    this.Hide();
+                    dashboard.Show();
+                }
+                else
+                {
+                    
+                }
+
             }
             else
             {
