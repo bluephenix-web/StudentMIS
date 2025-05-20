@@ -22,7 +22,7 @@ namespace StudentMIS
         {
             string username = txt_username.Text;
             string password = txt_password.Text;
-            string role = cb_role.SelectedText;
+            string role = cb_role.SelectedItem.ToString();
 
             Boolean loggedin = user.login(username, password, role);
 
@@ -39,7 +39,6 @@ namespace StudentMIS
                 {
                     
                 }
-
             }
             else
             {
